@@ -33,4 +33,4 @@ To use ChatDSA, you will need to set up a Discord bot and obtain an API key from
 If you would like to contribute to ChatDSA, feel free to submit a pull request.
 
 ## License
-This project is licensed under the MPL 2.0 License - see the LICENSE file for details.
+This project is licensed under the MPL 2.0 License - see the [LICENSE](https://github.com/ihasTaco/ChatDSA/blob/main/License) file for details.
