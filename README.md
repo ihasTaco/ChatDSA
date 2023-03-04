@@ -32,6 +32,9 @@ To use ChatDSA, you will need to set up a Discord bot and obtain an API key from
 7. Run the bot using the following command:
 ``python bot.py``
 
+## Known Issues
+ - If you use another ticket system (i.e. tickets) that opens a thread for tickets in the same channel (i.e. #help), the bot will respond in those threads as well.
+
 ## Contributing
 If you would like to contribute to ChatDSA, feel free to submit a pull request.
 
