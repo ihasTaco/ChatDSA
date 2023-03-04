@@ -325,7 +325,7 @@ async def on_ready():
             with open('config.ini', 'w') as f:
                 config.write(f)
 
-client.run("MTA4MDU2NTk2ODk0MzcxMDI0OQ.Gorcoi.10Lz39c2KJi-kT-wRKVSCWaVqKfS3OAcyj5RSY")
+client.run("DISCORD_TOKEN")
 
 if __name__ == '__main__':
     asyncio.run(join_threads())
