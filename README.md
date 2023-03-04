@@ -26,7 +26,10 @@ To use ChatDSA, you will need to set up a Discord bot and obtain an API key from
 1. Create a new Discord bot and obtain its token. You can follow the instructions [here](https://discordpy.readthedocs.io/en/stable/discord.html).
 2. Set the DISCORD_TOKEN environment variable to the token of your Discord bot.
 3. Obtain an API key from OpenAI and set the OPENAI_API_KEY environment variable to your API key.
-4. Run the bot using the following command:
+4. Set the channel to send the embed.
+5. Make context files (see context/)
+6. Run ``python generate_keywords.py`` to generate keywords, or create your own in 'keywords.json'
+7. Run the bot using the following command:
 ``python bot.py``
 
 ## Contributing
