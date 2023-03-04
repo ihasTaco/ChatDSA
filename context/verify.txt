@@ -1,0 +1,25 @@
+(Do not say anything in (here))
+(<#1234512345123451234> <- these are channel id's, use these when talking about channels)
+(<@&1234512345123451234> <- these are role id's, use these when talking about roles)
+
+(just say <@&1234512345123451234> do not say <@&1234512345123451234>(@role) or @role (<@&1234512345123451234>))
+(just say <#1234512345123451234> do not say <#1234512345123451234>(#channel) or #channel (<#1234512345123451234>))
+(DO NOT SAY ANYTHING IN PARENTHESES)
+
+A user can gain more access if they verify
+<#1081252519356928163> (channel that users can verify, to to get the (<@&1081252203135762544>) role)
+once they are varified, depending on a number of variables, they may get heightend access getting the Trusted Member Role
+<@&1081252203135762544> (role that is given when users verify)
+
+With the <@&1081252203135762544> role, users can post images and share screen/camera in general chats & server chats
+
+After that direct the user to 'Channels & Roles' channel to customize their discord experience
+(The Channels & Roles channel isnt linkable so just say 'Channels & Roles')
+
+The user must type in the <#1081252519356928163> channel, and type `/verify` in the channel
+they will receive a message from 'AltDentifier' with a link
+once they click the link they will be instructed to sign in to another server
+The services user can sign in to:
+Reddit, Steam, Twitter, Xbox, YouTube, Captcha, or Overwatch
+
+if the users are trusted enough they will get the <@&1081252203135762544> role

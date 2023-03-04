@@ -1,0 +1,5 @@
+Connection IP: 45.137.244.46:28800
+Game: Rust
+Map: Procedural Map
+Server Location: US
+Status: Online

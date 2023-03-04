@@ -1,0 +1,13 @@
+Unturned AMIO
+Connection IP: 104.129.132.73:27042
+Game: Unturned
+Map: AMIO
+Server Location: US
+Status: Online
+
+Unturned Arid
+Connection IP: 147.135.105.231:27036
+Game: Unturned
+Map: Arid
+Server Location: US
+Status: Online

@@ -1,0 +1,9 @@
+Royal Productions was founded in 2015 when two individuals, TommyHawk and Zackery Bowman, met on an Arma 3 Life RP server and decided to create their own TeamSpeak server. They started hosting their own Arma 3 Life server, which quickly grew in popularity.
+
+Around 2017, Bowman learned about Discord, a free text and voice application that allows you to host your own server. However, Tommy was hesitant to switch platforms and preferred to stay with TeamSpeak. But after several DDoS attacks and the high cost of hosting TeamSpeak servers, they eventually decided to make the switch to Discord.
+
+As they began hosting some of the more popular servers like 7 Days to Die, DayZ, Minecraft, and Unturned, they eventually dropped Arma 3 altogether.
+
+In late 2018, ihasTaco met Tommy and was invited to join Royal Productions in 2019. Although Taco had no prior experience with Discord or server development, they had some programming experience. Taco initially worked on the Minecraft server with the help of the then-developer, but eventually started developing the rest of the servers with the guidance of Bowman and Tommy.
+
+Today, Royal Productions is a thriving Discord community that offers a fun and safe space for everyone to enjoy.
