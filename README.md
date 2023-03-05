@@ -23,8 +23,8 @@ To run ChatDSA, you will need the following software installed on your system:
 To use ChatDSA, you will need to set up a Discord bot and obtain an API key from OpenAI. Follow the instructions below to get started:
 
 1. Create a new Discord bot and obtain its token. You can follow the instructions [here](https://discordpy.readthedocs.io/en/stable/discord.html).
-2. Set the DISCORD_TOKEN environment variable to the token of your Discord bot.
-3. Obtain an API key from OpenAI and set the OPENAI_API_KEY environment variable to your API key.
+2. Set the CHATDSA_TOKEN environment variable to the [token of your Discord bot](https://discord.com/developers/applications).
+3. [Obtain an API key from OpenAI](https://platform.openai.com/account/api-keys) and set the OPENAI_API_KEY environment variable to your API key.
 4. Set the channel to send the embed.
 5. Make context files (see context/)
 6. Run ``python generate_keywords.py`` to generate keywords, or create your own in 'keywords.json'
