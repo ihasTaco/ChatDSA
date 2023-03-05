@@ -8,8 +8,6 @@ import openai
 import asyncio
 import uuid
 import json
-import numpy as np
-from summa import keywords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from configparser import ConfigParser
@@ -231,6 +229,17 @@ async def on_message(message):
     if isinstance(message.channel, Thread):
         thread = message.channel
 
+        # Check if the thread was created by the ticket bot
+        if str(thread.parent_id) != allowed_channels:
+            print('Thread Parent is not in allowed channels')
+            return
+
+        # Check if the thread ID is in the threads.json file
+        threads = load_threads()
+        if str(thread.id) not in threads:
+            print('Thread not in threads.json')
+            return
+        
         await get_thread_history(thread)
 
         # Split the input message into individual words
@@ -267,24 +276,21 @@ async def on_message(message):
             for chunk in chunks:
                 await message.channel.send(chunk)
 
-
 class Chat(discord.ui.View):
-    @discord.ui.button(label="Chat now!", style=discord.ButtonStyle.primary) # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="Chat now!", style=discord.ButtonStyle.primary)
     async def button_callback(self, button, interaction):
-        # Get the user who clicked the button
         user = interaction.user
-
-        # Generate an 8-character ID for the chat thread
         chat_id = str(uuid.uuid4())[:8]
         thread_name = f"Chat - {chat_id}"
-
-        # Create a new thread with the thread name and add the user to it
         thread = await interaction.channel.create_thread(name=thread_name, auto_archive_duration=60)
         await thread.add_user(user)
 
-        conversation_history.append('You are ChatDSA, you are a helpful assistant for Royal Productions', thread, 'system')
+        # Add the thread ID to the threads.json file
+        threads = load_threads()
+        threads[str(thread.id)] = {'messages': []}
+        save_threads(threads)
 
-        # Send a welcome message to the user in the thread
+        conversation_history.append('You are ChatDSA, you are a helpful assistant for Royal Productions', thread, 'system')
         await thread.send(f"Hello, {user.mention}! How can I help you today?")
 
 @client.event
@@ -325,7 +331,7 @@ async def on_ready():
             with open('config.ini', 'w') as f:
                 config.write(f)
 
-client.run("DISCORD_TOKEN")
+client.run(os.environ["CHATDSA_TOKEN"])
 
 if __name__ == '__main__':
     asyncio.run(join_threads())

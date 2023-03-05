@@ -11,7 +11,6 @@ ChatDSA is a Discord chatbot built with Python and OpenAI's GPT-3 language model
 To run ChatDSA, you will need the following software installed on your system:
 
 - Python 3
-- Py-Cord
 - Discord Bot Token
 - OpenAI API key
 
@@ -31,9 +30,6 @@ To use ChatDSA, you will need to set up a Discord bot and obtain an API key from
 6. Run ``python generate_keywords.py`` to generate keywords, or create your own in 'keywords.json'
 7. Run the bot using the following command:
 ``python bot.py``
-
-## Known Issues
- - If you use another ticket system (i.e. tickets) that opens a thread for tickets in the same channel (i.e. #help), the bot will respond in those threads as well.
 
 ## Contributing
 If you would like to contribute to ChatDSA, feel free to submit a pull request.
