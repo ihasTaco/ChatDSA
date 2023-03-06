@@ -1,8 +1,15 @@
 # ChatDSA
-ChatDSA is a Discord chatbot built with Python and OpenAI's GPT-3 language model. It can help users with common questions and provide support in a chat thread.
+ChatDSA (or Discord Server Assistant) is a Discord chatbot built with Python and OpenAI's GPT-3.5-turbo language model. It can help users with common questions and provide support in a chat thread.
+Using ChatGPT's API system messages as context, you can send the AI information about your discord, it's purpose, and what fun and interesting things you can do in your discord.
+While ChatDSA's main purpose is to help new and old discord members get around your discord and community, and give users relevant information, it also still functions like ChatGPT, so members can use it to answer trivial and not so trivial questions.
+
+## Disclaimer
+Just a quick heads up! to my knowledge, just like chatGPT, openAI's gpt-3.5-turbo api is still being tested and worked on, and (for me at least) doesnt bill you for gpt-3.5-turbo token usage. I dont know if this is intentional or not, but i have noticed, while they do keep track of the token usage, i havent been charged or seen my usage go up (unlike their other api's that i have used)
+so let this be a notice to you, keep an eye on updates to their api's as well as your openAI account as this 'trial' or whatever it is, may end abruptly, and/or without warning, and if it does, i am in no way responsible for any charges accrude on your account.
+if anyone notices usage going up in their openAI account after using this or similar while using the gpt-3.5-turbo, please let me know, so i can put up a disclaimer saying so!
 
 ## Features
-- **Intuitive chat interface**: Users can interact with the bot through a chat thread.
+- **Intuitive chat interface**: Users can interact with the bot just by opening a thread and typing into it.
 - **Support for multiple users**: The bot can handle multiple chat threads simultaneously, allowing it to support multiple users at once.
 - **Keyword-based file lookup**: The bot can find and return files from a specified directory based on keywords provided by the user.
 - **Conversation history tracking**: The bot can keep track of conversation history to generate more relevant responses.
@@ -39,6 +46,22 @@ To use ChatDSA, you will need to set up a Discord bot and obtain an API key from
 6. Run ``python generate_keywords.py`` to generate keywords, or create your own in 'keywords.json'
 7. Run the bot using the following command:
 ``python bot.py``
+
+## Coming Soon
+these are in no particular order, but i will be working on functionality before anything.
+
+- ability to fetch multiple files to get more info on subjects (Done. In testing)
+  - im gonna run some test on using smaller context files, as i keep hitting the '4096 size limit' and the bot is coded to delete conversation history to make room for new responses, so you lose most of the context file contents anyways
+- ability to give members optional roles (i.e. color roles, notification roles, etc)
+  - I want this to be an optional setting, but the user can ask, "can you give me @red" and it will add it. but I also want to have a restricted roles setting so some roles cant be added (like moderator/admin roles).
+- get user and server information (username, users roles, server name, and total members) (Done, except for the below part)
+  - This will be useful for the give role feature, the ai will see a user is missing a role to do a certain action and can ask, "it seems you are missing the required role, would you like me to add it?"
+- Integration with ServerQuery for live server information, also add a setting in config.ini to enable/disable
+  - it would be cool to have users be able to ask 'whats the player count on the unturned arid server?' and the ai responds with, 'the unturned arid server is currently online and has 15 players, the peak time of the server today was at 5:40pm with 22 players' or something like that
+- Add settings for embed customizations
+  - right now the embed is hard coded with the title, description, button name (being completely honest, the embed and button were afterthoughts, i was originally just gonna have a /chat command) you can change them, its just, it is harder to do for the average user
+- I want the threads initial message to be an embed to show what the users can ask (customizable)
+- multi-guild support
 
 ## Contributing
 If you would like to contribute to ChatDSA, feel free to submit a pull request.
