@@ -4,9 +4,8 @@ Using ChatGPT's API system messages as context, you can send the AI information 
 While ChatDSA's main purpose is to help new and old discord members get around your discord and community, and give users relevant information, it also still functions like ChatGPT, so members can use it to answer trivial and not so trivial questions.
 
 ## Disclaimer
-Just a quick heads up! to my knowledge, just like chatGPT, openAI's gpt-3.5-turbo api is still being tested and worked on, and (for me at least) doesnt bill you for gpt-3.5-turbo token usage. I dont know if this is intentional or not, but i have noticed, while they do keep track of the token usage, i havent been charged or seen my usage go up (unlike their other api's that i have used)
-so let this be a notice to you, keep an eye on updates to their api's as well as your openAI account as this 'trial' or whatever it is, may end abruptly, and/or without warning, and if it does, i am in no way responsible for any charges accrude on your account.
-if anyone notices usage going up in their openAI account after using this or similar while using the gpt-3.5-turbo, please let me know, so i can put up a disclaimer saying so!
+Be aware that OpenAI's gpt-3.5-turbo api cost $0.002 / 1K tokens while it is cheaper than other api's that they offer, it can still racket up charges based on how many users will use it.
+Find your account usage here: https://platform.openai.com/account/usage
 
 ## Features
 - **Intuitive chat interface**: Users can interact with the bot just by opening a thread and typing into it.
