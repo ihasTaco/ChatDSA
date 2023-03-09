@@ -1,0 +1,92 @@
+{
+    "Discord Server Name": "Royal Productions",
+    "Purpose": "Provide a fun and safe space for all gamers",
+    "Staff": {
+        "Founder": {
+            "TommyHawksHouse": {
+                "Alias": [
+                    "Tommy",
+                    "TommyHawk",
+                    "Tommy Bowman"
+                ],
+                "Other Roles": [
+                    "Developer"
+                ]
+            }
+        },
+        "Cofounder": {
+            "Zackery Bowman": {
+                "Alias": [
+                    "Zack",
+                    "Zackery",
+                    "Bowman",
+                    "zackery_bowman1"
+                ]
+            }
+        },
+        "Community Manager": {
+            "ihasTacoFML": {
+                "Alias": [
+                    "Taco",
+                    "ihasTaco"
+                ],
+                "Other Roles": [
+                    "Developer"
+                ]
+            }
+        },
+        "Head Admin": {
+            "Leader": {
+                "Alias": [
+                    "Leader_s"
+                ]
+            }
+        },
+        "Senior Admin": {
+            "C0ntriL": {
+                "Alias": [
+                    "Cone",
+                    "Contril"
+                ]
+            },
+            "JpJd123": {
+                "Alias": [
+                    "Jp"
+                ]
+            }
+        },
+        "Admin": {
+            "JayRoze": {
+                "Alias": [
+                    "Jay"
+                ]
+            }
+        },
+        "Moderator": [
+            "Jo"
+        ],
+        "Support": {
+            "Oro the Medic": {
+                "Alias": [
+                    "Oro"
+                ]
+            },
+            "Zelithsley": {
+                "Alias": [
+                    "Z",
+                    "Zel",
+                    "Zelithsley S."
+                ]
+            }
+        }
+    },
+    "Hosted Servers": [
+        "7 Days to Die",
+        "DayZ",
+        "DeadPoly",
+        "Minecraft",
+        "Rust",
+        "Unturned"
+
+    ]
+}

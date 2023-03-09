@@ -1,0 +1,27 @@
+{
+    "Missing Roles": "If the user is missing roles, direct them to 'Channels & Roles' channel and they can assign roles themselves by selecting the buttons related to the notify roles",
+    "Notification Roles": {
+        "Details": "Notification roles allow users to pick which server updates they want to see.",
+        "Notify - General": {
+            "Role": "<@&1081314556325929002>"
+        },
+        "Notify - 7 Days to Die": {
+            "Role": "<@&1081314653965127690>"
+        },
+        "Notify - DayZ": {
+            "Role": "<@&1081314712928649256>"
+        },
+        "Notify - DeadPoly": {
+            "Role": "<@&1081314337689456681>"
+        },
+        "Notify - Minecraft": {
+            "Role": "<@&1081314743744221284>"
+        },
+        "Notify - Rust": {
+            "Role": "<@&1081314792041631807>"
+        },
+        "Notify - Unturned": {
+            "Role": "<@&1081314839684714607>"
+        }
+    }
+}

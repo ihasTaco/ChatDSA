@@ -1,0 +1,30 @@
+{
+    "Missing Roles": "If the user is missing roles, direct them to 'Channels & Roles' channel and they can assign roles themselves by selecting the buttons related to the color roles",
+    "Color Roles": { 
+        "Details": "Color roles only change the color of the user's name",
+        "Blue": {
+            "Role": "<@&1081314556325929002>"
+        },
+        "Cyan": {
+            "Role": "<@&1081314653965127690>"
+        },
+        "Green": {
+            "Role": "<@&1081314712928649256>"
+        },
+        "Orange": {
+            "Role": "<@&1081314337689456681>"
+        },
+        "Pink": {
+            "Role": "<@&1081314743744221284>"
+        },
+        "Purple": {
+            "Role": "<@&1081314792041631807>"
+        },
+        "Red": {
+            "Role": "<@&1081314839684714607>"
+        },
+        "Yellow": {
+            "Role": "<@&1081314624655339653>"
+        }
+    }
+}

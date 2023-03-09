@@ -1,0 +1,71 @@
+{
+   "Game": "Unturned",
+   "Rules URL": "https://rules.royalproductions.xyz/unturned/general",
+   "Commands URL": "https://rules.royalproductions.xyz/unturned/commands",
+   "General Rules": [
+      "Hacking or the use of third party software to get an unfair benefit or change gameplay mechanics is expressly forbidden!",
+      "Combat logging or exiting the server to prevent a fight or the loss of items by other players (except PvE) is forbidden!",
+      "You are responsible for anything you write or say.",
+      "Any try to scam, lie, cheat or similar, will get punished.",
+      "You are not allowed to advertise other servers and or platforms in association with other servers. ",
+      "Spamming of any kind is not allowed."
+   ],
+   "PvE Rules": {
+      "Raiding": [
+         "Raiding, the destruction of structures (floors, walls, lockers, vehicles, doors, or any other type of structure), is expressly forbidden.",
+         "It’s strictly forbidden to attempt to raid a base or building. Any method to get on top of or into other players bases and buildings are forbidden.",
+         "Raiding or troll raiding, defacing of buildings or non-approved mounting of any structures or plates is forbidden.",
+         "Car jacking vehicles to get advantage of a vehicle that does not belong to you.",
+         "While doing a horde beacon, if you placed a horde beacon down, its your discretion who you want to be there during the horde beacon.",
+         "*ARID ONLY* do not consecutively set off landmines at Tamara Complex - Airfield."
+      ],
+      "Bases": [
+         "1 Base/home per player.",
+         "Don't build outside of the map.",
+         "Don't build close to others on the map",
+         "Every base must have a sign with the name of the base owner on it.",
+         "Don't build inside or around prefab or major loot spawn areas (i.e. Military, Big Cities, Island's, Deadzone's, Farms. or Camp Areas) this is including Bases, Stores, etc."
+      ],
+      "Vehicles": [
+         "Vehicles on the PvE Servers must have a sign with the name of its owner on it.",
+         "Vehicles are only allowed in Safezones for a short time, if you leave, the vehicle needs to come with.",
+         "Vehicles must be returned to base before logging off or (can & will be destroyed).",
+         "Vehicles are to remain (2 Vehicle Per Person) so everyone has a fair share of getting a vehicle."
+      ]
+    },
+   "PvP Rules": [
+      "Every base must have a sign with the name of the base owner on it.",
+      "Only one base per player or group is allowed. If the group has 4 or more players two 5x5x3 bases are allowed, but the name of the group and all members in it has to be written on both bases.",
+      "Don't build inside or around prefab or major loot spawn areas (i.e. Military, Big Cities, Island's, Deadzone's, Farms. or Camp Areas) this is including Bases, Stores, etc.",
+      "Vehicles must have a sign with the name of its owner on it. Otherwise they will be destroyed. Vehicles are only allowed in Safezones for a short time."
+   ],
+   "Chat Rules": {
+      "General": [
+        "Be respectful, civil, and welcoming.",
+        "No inappropriate or unsafe content.",
+        "Do not misuse or spam in any of the channels.",
+        "Do not join the server to promote your content.",
+        "Any content that is NSFW is not allowed under any circumstances.",
+        "Controversial topics such as religion or politics are not allowed.",
+        "Catfishing and any sort of fake identities are forbidden.",
+        "Do not advertise without permission.",
+        "Anything to target specific groups/individuals is prohibited.",
+        "Avoid topics regarding banned members.",
+        "Listen to the server’s staff.",
+        "Do not DDoS or threaten to DDoS other users.",
+        "Do not engage in hate speech of any kind.",
+        "Any sort of discrimination will not be tolerated.",
+        "We promote diversity and inclusivity and expect your interactions in our channels to be respectful and guided by these principles.",
+        "The most important rule of all is to have fun!"
+      ],
+      "Text": [
+        "Don’t ping without legitimate reasoning behind them.",
+        "Do not attempt to bypass any blocked words.",
+        "Remain on topic and use channels correctly.",
+        "Do not spam messages or emotes."
+      ],
+      "Voice": [
+        "Please do not mic spam."
+      ]
+   }
+}

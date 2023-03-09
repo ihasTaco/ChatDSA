@@ -1,0 +1,68 @@
+{
+    "Bot Role Powers": "ChatDSA has the power to add roles to users.",
+    "Channels": "Server Channels need the 'Role Needed' role to access.",
+    "Missing Channel Access": "If the user can't see a channel, direct them to 'Channels & Roles' to assign roles",
+    "Default Channels": {
+        "Role Needed": "<@&1081317082743963698>",
+        "7dtd-server": {
+            "channel id": "<#1081331768667422791>",
+            "channel use": "Server Information for 7 Days to Die",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "7dtd-rules": {
+            "channel id": "<#1081334393240555631>",
+            "channel use": "Rules for 7 Days to Die",
+            "channel details": "Gives summary of rules and links to full list on website"
+        },
+        "dayz-server": {
+            "channel id": "<#1081331801349431346>",
+            "channel use": "Server Information for DayZ",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "dayz-rules": {
+            "channel id": "<#1081334425029185667>",
+            "channel use": "Rules for DayZ",
+            "channel details": "Gives summary of rules and links to full list on website"
+        },
+        "deadpoly-server": {
+            "channel id": "<#1081331843711909978>",
+            "channel use": "Server Information for Deadpoly",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "deadpoly-rules": {
+            "channel id": "<#1081334482797346926>",
+            "channel use": "Rules for Deadpoly",
+            "channel details": "Gives summary of rules and links to full list on website"
+        },
+        "minecraft-server": {
+            "channel id": "<#1081331990072147968>",
+            "channel use": "Server Information for Minecraft",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "minecraft-rules": {
+            "channel id": "<#1081334526636204102>",
+            "channel use": "Rules for Minecraft",
+            "channel details": "Gives summary of rules and links to full list on website"
+        },
+        "rust-server": {
+            "channel id": "<#1081332021336485959>",
+            "channel use": "Server Information for Rust",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "rust-rules": {
+            "channel id": "<#1081334689765265478>",
+            "channel use": "Rules for Rust",
+            "channel details": "Gives summary of rules and links to full list on website"
+        },
+        "unturned-server": {
+            "channel id": "<#1080641502235066478>",
+            "channel use": "Server Information for Unturned",
+            "channel details": "Shows users server connection details, online players, server status and trend data"
+        },
+        "unturned-rules": {
+            "channel id": "<#1080641527564476446>",
+            "channel use": "Rules for Unturned",
+            "channel details": "Gives summary of rules and links to full list on website"
+        }
+    }
+}

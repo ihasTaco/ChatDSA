@@ -1,0 +1,77 @@
+{
+    "Repository": "https://github.com/ihasTaco/ServerQuery",
+    "Project": "ServerQuery is a discord bot, made in python and is an open-source project made by ihasTaco",
+    "Summary": "ServerQuery can query game servers like, A2S Servers (Valve's Query API), FiveM and RedM Servers, Minecraft (Java & Bedrock) Servers, and SAMP Servers",
+    "Purpose": "ServerQuery, unlike its predeccessor, is built on stability and customization!",
+    "Customization": {
+        "Summary": "All of these customizations can be applied to each server embed",
+        "Embed": {
+            "Color": "Change the color of the embed",
+            "Thumbnail": "Change the Thumbnail image",
+            "Footer": [
+                "Change the Footers text",
+                "Change the Footers image"
+            ],
+            "Title": {
+                "Options": [
+                    "Use Server Name",
+                    "Use Config Name",
+                    "Use Custom Name"
+                ]
+            },
+            "Description": {
+                "Options": [
+                    "Disable",
+                    "Use Steam Quick Connect Link",
+                    "Use Custom Descriprion"
+                ]
+            },
+            "Fields": "Enable/Disable and Reorder fields",
+            "Players": "Enable/Disable Player Names",
+            "Graph": {
+                "Options": [
+                    "Enable/Disable Graph"
+                ],
+                "Title": [
+                    "Use a Custom Title",
+                    "Change Color of the Title"
+                ],
+                "Labels & Tick Marks": [
+                    "Use Custom Labels for X & Y Axis",
+                    "Change the Colors of the axis",
+                    "Change the Colors of the Tick Marks"
+                ],
+                "Graph Lines": {
+                    "Player Count": [
+                        "Change the Color of the Online Player Line",
+                        "Enable/Disable Online Player Fill"
+                    ],
+                    "Trend Line": [
+                        "Enable/Disable Player Trend Line"
+                    ]
+                },
+                "Grid": [
+                    "Enable/Disable Grid Lines",
+                    "Change the Color of the Grid Lines",
+                    "Change the Opacity of the Grid Lines"
+                ],
+                "Legend": [
+                    "Enable/Disable the Legend",
+                    "Change the Color of the Legend Background",
+                    "Change the Color of the Legend Border",
+                    "Change the Opacity of the Legend"
+                ]
+            }
+        },
+        "Notifications": "ServerQuery can now send notifications to a channel when a server changes status!"
+    },
+    "Commands": {
+        "Preface": "ServerQuery has 3 commands, but they aren't implemented yet",
+        "commands": [
+            "/server add",
+            "/server edit",
+            "/server delete"
+        ]
+    },
+    "License": "MPL 2.0 license."
+}

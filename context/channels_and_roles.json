@@ -1,0 +1,6 @@
+{
+    "Bot Role Powers": "ChatDSA has the power to add roles to users.",
+    "Channels & Roles": "The Channels & Roles channels allows users to assign server, color and notification roles to themselves",
+    "Missing Channel Access": "If the user can't see a channel, direct them to 'Channels & Roles' to assign themselves roles",
+    "How to use Channels & Roles channel": "Channels & Roles, is not like a normal discord channel, users can not chat in this channel, but it has a bunch of buttons, that will selected will assign roles and channels to the user based on selections"
+}

@@ -1,0 +1,28 @@
+[
+    {
+        "Connection IP": "104.129.132.73",
+        "Port": "27042",
+        "Query Port": "27042",
+        "Server Name": "Royal Productions | Unturned | AMIO | PvE",
+        "Game": "Unturned",
+        "Map": "AMIO",
+        "Server Type": "PvE",
+        "Query API": "A2S",
+        "Server Location": "US",
+        "Status": "Online",
+        "Online Players": "2"
+    },
+    {
+        "Connection IP": "147.135.105.231:27036",
+        "Port": "27036",
+        "Query Port": "27036",
+        "Server Name": "Royal Productions | Unturned | Arid | PvE",
+        "Game": "Unturned",
+        "Map": "Arid",
+        "Server Type": "PvE",
+        "Query API": "A2S",
+        "Server Location": "US",
+        "Status": "Online",
+        "Online Players": "2"
+    }
+]

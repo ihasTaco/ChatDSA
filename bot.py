@@ -11,9 +11,18 @@ import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from configparser import ConfigParser
+import re
 
 config = ConfigParser()
 config.read('config.ini')
+
+# Set up the OpenAI API credentials
+openai.api_key = os.environ["OPENAI_API_KEY"]
+#openai.api_key = "your api key here"
+
+# Set up Discord Bot Credentials
+discord_token = os.environ["CHATDSA_TOKEN"]
+#discord_token = "your discord token here"
 
 # Create a new Discord bot client with the appropriate intents
 intents = discord.Intents.default()
@@ -24,14 +33,12 @@ intents.presences = False
 #client = commands.Bot(command_prefix="/", intents=intents)
 
 client = discord.Client(intents=intents)
-# Set up the OpenAI API credentials
-openai.api_key = os.environ["OPENAI_API_KEY"]
+
 # Set the base URL for the API
 openai.api_base = "https://api.openai.com/v1/chat"
 
 allowed_channels = config['GENERAL']['help_channel']
 threads_file = 'threads.json'
-
 
 def generate_response(conversation_history):
     response = openai.Completion.create(
@@ -96,26 +103,29 @@ with open("keywords.json", "r") as f:
 # Keywords
 vectorizer = TfidfVectorizer()
 
-def find_matching_file(words):
+def find_matching_files(words, n=4):
     """
-    Finds a file in the context directory that matches the given keywords.
+    Finds up to n files in the context directory that match the given keywords, ranked by similarity.
     """
-    matching_file = None
-    best_similarity = 0
-
     context_dir = "context"
+    file_similarities = []
     for filename in os.listdir(context_dir):
         file_path = os.path.join(context_dir, filename)
         with open(file_path, "r") as file:
             file_content = file.read()
             file_keywords = keywords_dict.get(filename, [])
             similarity = compute_cosine_similarity(words, file_keywords)
-            #print(f'\nFile:\n{filename}\nKeyword Simularity:\n{similarity}')
-            if similarity > best_similarity:
-                best_similarity = similarity
-                matching_file = file_path
+            print(f"\nFile Name:\n{filename}\n{similarity}")
+            if similarity != 0:
+                file_similarities.append((file_path, similarity))
 
-    return matching_file
+    # Sort files by ascending order of similarity
+    file_similarities = sorted(file_similarities, key=lambda x: x[1])
+    
+    # Extract file paths from sorted list in reverse order
+    file_paths = [file_path for file_path, similarity in file_similarities[::-1][:n]]
+    
+    return file_paths[::-1]
 
 def compute_cosine_similarity(set1, set2):
     """
@@ -204,7 +214,7 @@ class CircularBuffer:
             json.dump(threads, f, indent=4)
     
         # Print a message to indicate which messages were deleted
-        print(f"Deleted {num_messages_to_delete} messages from thread {thread.id}: {messages_to_delete}")
+        print(f"\nDeleted {num_messages_to_delete} messages from thread {thread.id}:\n\n{messages_to_delete}\n")
 
 def split_message(message):
     chunks = []
@@ -217,7 +227,17 @@ def split_message(message):
         message = message[split_index+1:]
     return chunks
 
-conversation_history = CircularBuffer(max_size=5)
+conversation_history = CircularBuffer(max_size=50)
+
+async def add_role(member, role_name):
+    """
+    Adds a role to a member if it exists.
+    """
+    role = discord.utils.get(member.guild.roles, name=role_name)
+    if role:
+        await member.add_roles(role)
+        return True
+    return False
 
 @client.event
 async def on_message(message):
@@ -240,33 +260,51 @@ async def on_message(message):
             print('Thread not in threads.json')
             return
         
-        await get_thread_history(thread)
+        
+        # 'Type' while the bot is thinking
+        async with message.channel.typing():
+            await get_thread_history(thread)
 
-        # Split the input message into individual words
-        words = message.content.split()
+            # Split the input message into individual words, make them lowercase, and remove special characters
+            words = [word.lower().strip('.,?!$%^*()_+-=\\|') for word in message.content.split()]
+            print(f'\nWords:\n{words}\n')
 
-        # Find the matching file based on the words
-        matching_file = find_matching_file(words)
-        if matching_file is not None:
-            with open(matching_file, "r") as f:
-                file_content = f.read()
-            conversation_history.append(file_content , thread, 'system')
+            # Find the matching files based on the words
+            matching_files = find_matching_files(words)
 
-        print(f"\nMatching file:\n{matching_file}\n")
+            # Load the content of each matching file and use it as input to generate a response
+            for matching_file in matching_files:
+                print(f"\nMatching file:\n{matching_file}\n")
+                with open(matching_file, "r") as f:
+                    file_content = f.read()
+                conversation_history.append(file_content , thread, 'system')
 
-        conversation_history.append(message.content, thread, 'user')
+            conversation_history.append(message.content, thread, 'user')
 
-        max_size = 50
+            max_size = 50
 
-        while True:
-            # Generate a response
-            try:
-                response = generate_response(conversation_history.get(thread))
-                break
-            except openai.error.InvalidRequestError:
-                max_size = max_size // 2
-                # If the response cannot be generated due to maximum context length limit, remove the oldest messages and try again
-                conversation_history.delete_oldest_messages(thread, max_size)
+            # Get the server name and total users
+            server_name = message.guild.name
+            total_users = len(message.guild.members)
+
+            # Get the user's name and roles
+            user_name = message.author.name
+            user_roles = [role.name for role in message.author.roles]
+
+            # Format the message content as a string that the AI can process
+            message_text = f"User Name: {user_name} (Users Roles: {', '.join(user_roles)}) Server: {server_name} Total Users: {total_users} users"
+            conversation_history.append(message_text, thread, 'system')
+
+            while True:
+                # Generate a response
+                try:
+                    response = generate_response(conversation_history.get(thread))
+                    break
+                except openai.error.InvalidRequestError:
+                    max_size = max_size - 1
+                    # If the response cannot be generated due to maximum context length limit, remove the oldest messages and try again
+                    conversation_history.delete_oldest_messages(thread, max_size)
+                    continue
 
         conversation_history.append(response, thread, 'assistant')
         try: 
@@ -331,7 +369,7 @@ async def on_ready():
             with open('config.ini', 'w') as f:
                 config.write(f)
 
-client.run(os.environ["CHATDSA_TOKEN"])
+client.run(discord_token)
 
 if __name__ == '__main__':
     asyncio.run(join_threads())

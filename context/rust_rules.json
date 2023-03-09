@@ -1,0 +1,59 @@
+{
+  "Game": "Rust",
+  "Rules URL": "https://rules.royalproductions.xyz/rust/general",
+  "General Rules": [
+    "Players caught cheating, scripting, glitching, or abusing bugs will be permanently banned from our servers.",
+    "Any forms of racism or hate speech will result in a ban from our server. This includes using in-game signs to depict bigotry or offensive slurs.",
+    "Players who are caught intentionally harassing or ruining a streamer's gameplay will be banned from our server.",
+    "We understand aggressive behavior is a part of Rust. We will take action against users whose toxicity begins to impact the entire server's gameplay experience.",
+    "Spamming the global chat or advertising will result in a mute. If multiple offences accrue, the player will be banned.",
+    "Players caught releasing information such as names, addresses, phone numbers or any other personal information will be permanently banned from our server.",
+    "Players who threaten others in real life will be banned from our server and may be reported to the proper authorities.",
+    "Publicly disrespecting Royal Productions or its server staff will not be tolerated and will result in a mute.",
+    "Players may be banned by the association at the discretion of the server staff."
+  ],
+  "PvE Rules": [
+    "No killing other players, such as fire or setting traps that you know will kill a player.",
+    "Raiding and counter-raids are allowed in PvE"
+  ],
+  "PvP Rules": [{
+    "PvP is allowed in the following areas": [
+      "Oil Rig (Small and Large)",
+      "Cargo",
+      "Countering Bradley and Heli",
+      "Airfield",
+      "Anytime while Raiding"
+    ]},
+    "If you kill a player anywhere else besides what is listed above, action will be taken against",
+    "If you are inside a PvP area, and another player is in PvE, and you kill them, you will be punished"
+  ],
+  "Chat Rules": {
+    "General": [
+      "Be respectful, civil, and welcoming.",
+      "No inappropriate or unsafe content.",
+      "Do not misuse or spam in any of the channels.",
+      "Do not join the server to promote your content.",
+      "Any content that is NSFW is not allowed under any circumstances.",
+      "Controversial topics such as religion or politics are not allowed.",
+      "Catfishing and any sort of fake identities are forbidden.",
+      "Do not advertise without permission.",
+      "Anything to target specific groups/individuals is prohibited.",
+      "Avoid topics regarding banned members.",
+      "Listen to the server’s staff.",
+      "Do not DDoS or threaten to DDoS other users.",
+      "Do not engage in hate speech of any kind.",
+      "Any sort of discrimination will not be tolerated.",
+      "We promote diversity and inclusivity and expect your interactions in our channels to be respectful and guided by these principles.",
+      "The most important rule of all is to have fun!"
+    ],
+    "Text": [
+      "Don’t ping without legitimate reasoning behind them.",
+      "Do not attempt to bypass any blocked words.",
+      "Remain on topic and use channels correctly.",
+      "Do not spam messages or emotes."
+    ],
+    "Voice": [
+      "Please do not mic spam."
+    ]
+  }
+}

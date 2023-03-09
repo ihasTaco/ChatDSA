@@ -1,0 +1,29 @@
+
+{
+    "Creator": "ihasTaco",
+    "Projects": {
+        "ChatDSA":{
+            "repository": "https://github.com/ihasTaco/ChatDSA",
+            "description": "Discord Chat Bot using chatGPT to help users navigate the Royal Productions Discord server and provide information about servers",
+            "features": [
+                "Open a chat thread easily with one click",
+                "Add context that the AI will be able to use to help users find the correct information",
+                "Conversation History Tracking"
+            ],
+            "license": "MPL-2.0"
+        },
+        "ServerQuery":{
+            "repository": "https://github.com/ihasTaco/ChatDSA",
+            "description": "A fully customizable Game Server Query bot written in python",
+            "features": [
+                "Ability to customize every aspect of the bot, from the embed color, to the title on the players graph",
+                "JSON support, with MySQL and MariaDB support comming soon",
+                "Server Specific Customization",
+                "Custom Logging System",
+                "Supports Valves A2S, Minecraft, FiveM/RedM, and SAMP Query API's",
+                "Supports hundreds of games!"
+            ],
+            "license": "MPL-2.0"
+        }
+    }
+}

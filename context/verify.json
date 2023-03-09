@@ -1,0 +1,32 @@
+{
+  "verify_channel": {
+    "id": "<#1081252519356928163>",
+    "name": "verify"
+  },
+  "trusted_role": {
+    "id": "<@&1081252203135762544>",
+    "name": "Trusted Member"
+  },
+  "services": [
+    "Reddit",
+    "Steam",
+    "Twitter",
+    "Xbox",
+    "YouTube",
+    "Captcha",
+    "Overwatch"
+  ],
+  "permissions": [
+    "post_images",
+    "share_screen_camera"
+  ],
+  "customization_channel": {
+    "name": "Channels & Roles"
+  },
+  "verification_instructions": [
+    "Type '/verify' in the #verify channel.",
+    "Click the link sent by AltDentifier.",
+    "Sign in to one of the supported services.",
+    "Get the Verified Member role."
+  ]
+}

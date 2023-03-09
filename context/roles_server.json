@@ -1,0 +1,24 @@
+{
+    "Missing Roles": "If the user is missing roles, direct them to 'Channels & Roles' channel and they can assign roles themselves by selecting the buttons related to the server roles",
+    "Server Roles": {
+        "Details": "Server roles give users access to server channels",
+        "7 Days to Die": {
+            "Role": "<@&1081313548459835552>"
+        },
+        "DayZ": {
+            "Role": "<@&1081313600351780934>"
+        },
+        "DeadPoly": {
+            "Role": "<@&1081313643926396928>"
+        },
+        "Minecraft": {
+            "Role": "<@&1081313682807586866>"
+        },
+        "Rust": {
+            "Role": "<@&1081313716466884668>"
+        },
+        "Unturned": {
+            "Role": "<@&1081313486405111908>"
+        }
+    }
+}

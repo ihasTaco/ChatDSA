@@ -1,0 +1,11 @@
+{
+    "repository": "https://github.com/ihasTaco/ChatDSA",
+    "name": "ChatDSA",
+    "description": "Open-Source Discord bot made in Discord.py, using OpenAI's 'gpt-3.5-turbo' model",
+    "creator": "ihasTacoFML",
+    "purpose": "To help users navigate the Royal Productions Discord server and provide information about the different servers hosted by Royal Productions",
+    "functionality": "Can function similarly to ChatGPT, but in Discord. Plans to add more functionality like opening tickets and adding roles to users.",
+    "contact": {
+        "discord": "https://discord.gg/uJ96tnTP6G"
+    }
+}

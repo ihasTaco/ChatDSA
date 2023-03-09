@@ -1,0 +1,57 @@
+{
+  "welcomeMessage": "Welcome the user to Royal Productions",
+  "rulesChannel": {
+    "id": "<#915868439808188426>",
+    "name": "Rules"
+  },
+  "helpChannel": {
+    "id": "<#915868442677108757>",
+    "name": "Help"
+  },
+  "defaultRole": {
+    "id": "<@&915868417960050738>",
+    "name": "Royal Productions Member"
+  },
+  "channels": [
+    {
+      "id": "<#915868448716902430>",
+      "name": "General"
+    },
+    {
+      "id": "<#1079972024321060905>",
+      "name": "Memes"
+    },
+    {
+      "id": "<#1079971809446862918>",
+      "name": "Links"
+    },
+    {
+      "id": "<#1079972259713789962>",
+      "name": "Screenshots"
+    },
+    {
+      "id": "<#915868437035757599>",
+      "name": "General #1"
+    },
+    {
+      "id": "<#915868438436667442>",
+      "name": "General #2"
+    }
+  ],
+  "verificationChannel": {
+    "id": "<#915868425660813352>",
+    "name": "Verify"
+  },
+  "verifiedRole": {
+    "id": "<@&925941195564273755>",
+    "name": "Trusted Member"
+  },
+  "verifiedRoleDescription": "role that is given when users verify",
+  "verifiedRolePermissions": {
+    "canPostImages": true,
+    "canShareScreen": true
+  },
+  "channelsAndRolesChannel": {
+    "name": "Channels & Roles"
+  }
+}

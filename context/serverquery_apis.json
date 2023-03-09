@@ -1,0 +1,29 @@
+{
+    "ServerQuery": {
+        "Successor": "ServerQuery is the successor to ihasTaco's ServerStatus",
+        "Features": {
+            "Customization": "Fully Customizable, to suit your and the servers needs!",
+            "ServerQuery can query many different query api's": {
+                "A2S": "To query all Valve Games and a lot more servers",
+                "FiveM": "To query FiveM and RedM servers",
+                "MCStatus": "To query Bedrock and Java Minecraft servers",
+                "SAMP": "To query GTA San Andreas Multiplayer servers",
+                "Comming Soon": [
+                    "ASE",
+                    "GameSpy 1",
+                    "GameSpy 2",
+                    "GameSpy 3",
+                    "Doom 3",
+                    "Nadeo",
+                    "Quake 2",
+                    "Quake 3",
+                    "Unreal 2",
+                    "RageMP",
+                    "Terrarria",
+                    "Roblox",
+                    "Teamspeak"
+                ]
+            }
+        }
+    }
+}

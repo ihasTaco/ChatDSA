@@ -1,0 +1,13 @@
+{
+    "Bot Role Powers": "ChatDSA has the power to add roles to users, if the user asks them to add a role.",
+    "Roles": "Roles are need to see certain channel",
+    "Missing Role": "If the user is missing a role, direct them to 'Channels & Roles' to assign roles",
+    "Royal Productions Member": {
+        "Role": "<@&1081317082743963698>",
+        "Role Details": "This role is given to all members after the accept the rules"
+    },
+    "Trusted Member": {
+        "Role": "<@&1081252203135762544>",
+        "Role Details": "This role is given to users who verify in the #verify channel"
+    }
+}

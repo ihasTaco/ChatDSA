@@ -1,0 +1,122 @@
+{
+    "User Roles": "Check that the user has the required role to access channels, if they dont, let them know they dont have the role and then direct them to the 'Channels & Roles' Channel, there they can select the buttons related to the channels required role",
+    "Bot Role Powers": "ChatDSA has the power to add roles to users.",
+    "Channels": "Server Channels need the 'Role Needed' role to access.",
+    "Missing Channel Access": "If the user can't see a channel, direct them to 'Channels & Roles' to assign roles",
+    "Server Channels": {
+        "7 Days to Die": {
+            "Role Needed": "<@&1081313548459835552>",
+            "7dtd-suggestions": {
+                "channel id": "<#1081334747843805234>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            },
+            "7dtd-general": {
+                "channel id": "<#1081335157572780133>",
+                "channel use": "Text channel for general conversation about 7 Days to Die"
+            }, 
+            "7DTD #1": {
+                "channel id": "<#1081335486548807723>",
+                "channel use": "Voice channel for general conversation and group chat for 7 Days to Die"
+            }, 
+            "7DTD #2": {
+                "channel id": "<#1081335521944547329>",
+                "channel use": "Voice channel for general conversation and group chat for 7 Days to Die"
+            }
+        },
+        "DayZ": {
+            "Role Needed": "<@&1081313600351780934>",
+            "dayz-suggestions": {
+                "channel id": "<#1081334802881445888>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            }, 
+            "dayz-general": {
+                "channel id": "<#1081335208361599006>",
+                "channel use": "Text channel for general conversation about DayZ"
+            }, 
+            "DayZ #1": {
+                "channel id": "<#1081335579859492874>",
+                "channel use": "Voice channel for general conversation and group chat for DayZ"
+            }, 
+            "DayZ #2": {
+                "channel id": "<#1081335643638087720>",
+                "channel use": "Voice channel for general conversation and group chat for DayZ"
+            }
+        },
+        "DeadPoly": {
+            "Role Needed": "<@&1081313643926396928>",
+            "deadpoly-suggestions": {
+                "channel id": "<#1081334921534132264>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            },
+            "deadpoly-general": {
+                "channel id": "<#1081335256440897556>",
+                "channel use": "Text channel for general conversation about DeadPoly"
+            }, 
+            "DeadPoly #1": {
+                "channel id": "<#1081335688043188234>",
+                "channel use": "Voice channel for general conversation and group chat for DeadPoly"
+            }, 
+            "DeadPoly #2": {
+                "channel id": "<#1081335722772017264>",
+                "channel use": "Voice channel for general conversation and group chat for DeadPoly"
+            }
+        },
+        "Minecraft": {
+            "Role Needed": "<@&1081313682807586866>",
+            "minecraft-suggestions": {
+                "channel id": "<#1081334981277794334>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            }, 
+            "minecraft-general": {
+                "channel id": "<#1081335316486553612>",
+                "channel use": "Text channel for general conversation about Minecraft"
+            }, 
+            "Minecraft #1": {
+                "channel id": "<#1081335831287042108>",
+                "channel use": "Voice channel for general conversation and group chat for Minecraft"
+            }, 
+            "Minecraft #2": {
+                "channel id": "<#1081335854963896372>",
+                "channel use": "Voice channel for general conversation and group chat for Minecraft"
+            }
+        },
+        "Rust": {
+            "Role Needed": "<@&1081313716466884668>",
+            "rust-suggestions": {
+                "channel id": "<#1081335098831540254>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            }, 
+            "rust-general": {
+                "channel id": "<#1081335354600202300>",
+                "channel use": "Text channel for general conversation about Rust"
+            }, 
+            "Rust #1": {
+                "channel id": "<#1081335891978616924>",
+                "channel use": "Voice channel for general conversation and group chat for Rust"
+            }, 
+            "Rust #2": {
+                "channel id": "<#1081335923393961994>",
+                "channel use": "Voice channel for general conversation and group chat for Rust"
+            }
+        },
+        "Unturned": {
+            "Role Needed": "<@&1081313486405111908>",
+            "unturned-suggestions": {
+                "channel id": "<#1081306682950418523>",
+                "channel use": "Users can suggest new features and mods/plugins"
+            }, 
+            "unturned-general": {
+                "channel id": "<#1081306737342152745>",
+                "channel use": "Text channel for general conversation about Unturned"
+            }, 
+            "Unturned #1": {
+                "channel id": "<#1081306799359144076>",
+                "channel use": "Voice channel for general conversation and group chat for Unturned"
+            }, 
+            "Unturned #2": {
+                "channel id": "<#1081306910206197810>",
+                "channel use": "Voice channel for general conversation and group chat for Unturned"
+            }
+        }
+    }
+}

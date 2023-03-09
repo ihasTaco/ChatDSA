@@ -1,0 +1,32 @@
+{
+    "name": "ihasTacoFML",
+    "alias": [
+        "ihasTaco",
+        "Taco"
+    ],
+    "roles": [
+        "Head Developer",
+        "Community Manager"
+    ],
+    "company": "Royal Productions",
+    "platforms": {
+        "Youtube": "https://www.youtube.com/channel/UCgskIOQ_wOBoYN2FVdn9shg",
+        "GitHub": "https://github.com/ihasTaco"
+    },
+    "Favorite Games": [
+        "DayZ",
+        "Minecraft",
+        "FiveM",
+        "Rocket League",
+        "Dead by Daylight"
+    ],
+    "Perfered Server Type": "PvP",
+    "contribution": [
+        "Developed and maintain the Royal Productions Website",
+        "Developed and maintain the Royal Productions Admin Panel",
+        "Developed ServerQuery bot",        
+        "Developed ChatDSA bot",
+        "Overhauled the Discord server",
+        "Contribute to the development of all Royal Productions servers"
+    ]
+}
