@@ -1,5 +1,5 @@
 {
-    "7d2d-connection.txt": [
+    "7d2d_connection.json": [
         "7d2d",
         "7dtd",
         "7days",
@@ -10,9 +10,11 @@
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "<@&1081313600351780934>",
+        "<#1081331768667422791>"
     ],
-    "7d2d-rules.txt": [
+    "7d2d_rules.json": [
         "7d2d",
         "7dtd",
         "7days",
@@ -21,80 +23,154 @@
         "rules",
         "rule",
         "base",
-        "bases"
+        "bases",
+        "<@&1081313600351780934>",
+        "<#1081334393240555631>"
     ],
-    "channels_and_roles.txt": [
+    "channels.json": [
+        "channels",
+        "channel",
+        "missing",
+        "<@&1081317082743963698>",
+        "royal",
+        "productions",
+        "member",
+        "<#1081331768667422791>",
+        "7dtd-server",
+        "<#1081334393240555631>",
+        "7dtd-rules",
+        "<#1081331801349431346>",
+        "dayz-server",
+        "<#1081334425029185667>",
+        "dayz-rules",
+        "<#1081331843711909978>",
+        "deadpoly-server",
+        "<#1081334482797346926>",
+        "deadpoly-rules",
+        "<#1081331990072147968>",
+        "minecraft-server",
+        "<#1081334526636204102>",
+        "minecraft-rules",
+        "<#1081332021336485959>",
+        "rust-server",
+        "<#1081334689765265478>",
+        "rust-rules",
+        "<#1080641502235066478>",
+        "unturned-server",
+        "<#1080641527564476446>",
+        "unturned-rules"
+    ],
+    "channels_servers.json": [
+        "channels",
+        "channel",
+        "missing",
         "server",
-        "information",
         "servers",
+        "<@&1081313548459835552>",
+        "<#1081334747843805234>",
+        "7dtd-suggestions",
+        "<#1081335157572780133>",
+        "7dtd-general",
+        "<#1081335486548807723>",
+        "<#1081335521944547329>",
+        "7dtd",
+        "<@&1081313600351780934>",
+        "<#1081334802881445888>",
+        "dayz-suggestions",
+        "<#1081335208361599006>",
+        "dayz-general",
+        "<#1081335579859492874>",
+        "<#1081335643638087720>",
+        "dayz",
+        "<@&1081313643926396928>",
+        "<#1081334921534132264>",
+        "deadpoly-suggestions",
+        "<#1081335256440897556>",
+        "deadpoly-general",
+        "<#1081335688043188234>",
+        "<#1081335722772017264>",
+        "deadpoly",
+        "<@&1081313682807586866>",
+        "<#1081334981277794334>",
+        "minecraft-suggestions",
+        "<#1081335316486553612>",
+        "minecraft-general",
+        "<#1081335831287042108>",
+        "<#1081335854963896372>",
+        "minecraft",
+        "<@&1081313716466884668>",
+        "<#1081335098831540254>",
+        "rust-suggestions",
+        "<#1081335354600202300>",
+        "rust-general",
+        "<#1081335891978616924>",
+        "<#1081335923393961994>",
+        "rust",
+        "<@&1081313486405111908>",
+        "<#1081306682950418523>",
+        "unturned-suggestions",
+        "<#1081306737342152745>",
+        "unturned-general",
+        "<#1081306799359144076>",
+        "<#1081306910206197810>",
+        "unturned"
+    ],
+    "channels_and_roles.json": [
+        "server",
         "roles",
         "role",
+        "missing",
         "channels",
-        "7d2d",
-        "7dtd",
-        "7day",
-        "7days",
-        "7 days",
-        "7 days to die",
-        "dayz",
-        "deadpoly",
-        "minecraft",
-        "rust",
-        "unturned",
-        "colors",
-        "blue",
-        "cyan",
-        "green",
-        "orange",
-        "pink",
-        "purple",
-        "red",
-        "yellow",
-        "suggestions",
-        "suggesting",
-        "notify",
-        "notified",
-        "updates",
-        "notification",
-        "notifications"
+        "channel"
     ],
-    "dayz-connection.txt": [
+    "dayz_connection.json": [
         "dayz",
         "info",
         "information",
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "<@&1081331801349431346>",
+        "<#915868469579366460>"
     ],
-    "dayz-rules.txt": [
+    "dayz_rules.json": [
         "dayz",
         "rules",
         "rule",
         "base",
         "bases",
-        "building"
+        "building",
+        "<@&1081313600351780934>",
+        "<#1081334425029185667>"
     ],
-    "deadpoly-connection.txt": [
+    "deadpoly_connection.json": [
         "deadpoly",
         "info",
         "information",
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "<@&1081313643926396928>",
+        "<#1081331843711909978>"
     ],
-    "deadpoly-rules.txt": [
+    "deadpoly_rules.json": [
         "deadpoly",
         "rules",
-        "rule"
+        "rule",
+        "<@&1081313643926396928>",
+        "<#1081334482797346926>"
     ],
-    "github.txt": [
+    "github.json": [
+        "ihastacofml",
+        "ihastaco",
+        "taco",
         "github",
         "projects",
         "project",
         "opensource",
-        "open-source",
+        "open_source",
         "open",
         "source",
         "discord",
@@ -103,15 +179,15 @@
         "server",
         "query"
     ],
-    "ihasTaco.txt": [
-        "ihastaco",
+    "ihasTaco.json": [
         "ihastacofml",
+        "ihastaco",
         "taco",
         "community",
         "manager",
         "developer"
     ],
-    "minecraft-connection.txt": [
+    "minecraft_connection.json": [
         "104.129.132.73:25642",
         "104.129.132.73",
         "minecraft",
@@ -120,17 +196,21 @@
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "<@&1081313682807586866>",
+        "<#1081331990072147968>"
     ],
-    "minecraft-rules.txt": [
+    "minecraft_rules.json": [
         "minecraft",
         "rules",
         "rule",
         "pve",
-        "building"
+        "building",
+        "<@&1081313682807586866>",
+        "<#1081334526636204102>"
 
     ],
-    "royal_productions_origin.txt": [
+    "origin.json": [
         "start",
         "started",
         "origin",
@@ -142,7 +222,82 @@
         "arma",
         "life"
     ],
-    "royal_productions_summary.txt": [
+    "roles.json": [
+        "royal",
+        "productions",
+        "member",
+        "trusted",
+        "<@&1081317082743963698>",
+        "<@&1081252203135762544>"
+    ],
+    "roles_server.json": [
+        "role",
+        "color",
+        "blue",
+        "cyan",
+        "green",
+        "orange",
+        "pink",
+        "purple",
+        "red",
+        "yellow",
+        "<@&1081313548459835552>",
+        "<@&1081313600351780934>",
+        "<@&1081313643926396928>",
+        "<@&1081313682807586866>",
+        "<@&1081313716466884668>",
+        "<@&1081313486405111908>"
+    ],
+    "roles_colors.json": [
+        "server",
+        "role",
+        "days",
+        "die",
+        "7dtd",
+        "7d2d",
+        "dayz",
+        "deadpoly",
+        "minecraft",
+        "mc",
+        "rust",
+        "unturned",
+        "<@&1081314556325929002>",
+        "<@&1081314653965127690>",
+        "<@&1081314712928649256>",
+        "<@&1081314337689456681>",
+        "<@&1081314743744221284>",
+        "<@&1081314792041631807>",
+        "<@&1081314839684714607>",
+        "<@&1081314624655339653>"
+    ],
+    "roles_notify.json": [
+        "server",
+        "servers",
+        "role",
+        "roles",
+        "days",
+        "die",
+        "7dtd",
+        "7d2d",
+        "dayz",
+        "deadpoly",
+        "minecraft",
+        "mc",
+        "rust",
+        "unturned",
+        "notify",
+        "notification",
+        "notifications",
+        "general",
+        "<@&1081314556325929002>",
+        "<@&1081314653965127690>",
+        "<@&1081314712928649256>",
+        "<@&1081314337689456681>",
+        "<@&1081314743744221284>",
+        "<@&1081314792041631807>",
+        "<@&1081314839684714607>"
+    ],
+    "royal_productions_summary.json": [
         "productions",
         "royal",
         "founder",
@@ -179,45 +334,53 @@
         "senior",
         "admin",
         "moderator",
-        "support"
+        "support",
+        "<@&1081317082743963698>"
     ],
-    "rust-connection.txt": [
+    "rust_connection.json": [
         "rust",
         "info",
         "information",
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "<@&1081313716466884668>",
+        "<#1081332021336485959>"
     ],
-    "rust-rules.txt": [
+    "rust_rules.json": [
         "rust",
         "player",
         "rules",
         "rule",
         "chat",
-        "groups"
+        "groups",
+        "<@&1081313716466884668>",
+        "<#1081334689765265478>"
     ],
-    "serverquery_apis.txt": [
+    "serverquery_apis.json": [
         "server",
         "query",
         "serverquery",
         "apis",
         "api"
     ],
-    "serverquery_games.txt": [
+    "serverquery_games.json": [
         "server",
         "query",
         "serverquery",
         "supported",
         "games"
     ],
-    "serverquery_summary.txt": [
+    "serverquery_summary.json": [
+        "ihastacofml",
+        "ihastaco",
+        "taco",
         "server",
         "query",
         "serverquery"
     ],
-    "starter_guide.txt": [
+    "starter_guide.json": [
         "new",
         "royal",
         "productions",
@@ -233,7 +396,7 @@
         "trusted",
         "member"
     ],
-    "tommy_hawk.txt": [
+    "tommyhawkshouse.json": [
         "founder",
         "tommyhawkshouse",
         "tommyhawk",
@@ -242,7 +405,7 @@
         "owner",
         "developer"
     ],
-    "unturned-connection.txt": [
+    "unturned_connection.json": [
         "unturned",
         "arid",
         "amio",
@@ -251,9 +414,12 @@
         "connection",
         "game",
         "map",
-        "ip"
+        "ip",
+        "server",
+        "<@&1081313486405111908>",
+        "<#1080641502235066478>"
     ],
-    "unturned-rules.txt": [
+    "unturned_rules.json": [
         "unturned",
         "arid",
         "amio",
@@ -273,16 +439,22 @@
         "spam",
         "beacon",
         "general",
-        "unturned",
         "cities",
         "group",
-        "groups"
+        "groups",
+        "<@&1081313486405111908>",
+        "<#1080641527564476446>"
     ],
-    "verify.txt": [
+    "verify.json": [
         "verify",
-        "trusted"
+        "trusted",
+        "<#1081252519356928163>",
+        "<@&1081252203135762544>"
     ],
-    "who_am_i.txt": [
+    "chatdsa_info.json": [
+        "ihastacofml",
+        "ihastaco",
+        "taco",
         "purpose",
         "discord",
         "bot",
@@ -290,14 +462,16 @@
         "royal",
         "sage",
         "productions",
+        "ihastacofml",
         "ihastaco",
+        "taco",
         "function",
         "server",
         "servers"
     ],
-    "zackery_bowman.txt": [
+    "zackery_bowman.json": [
         "cofounder",
-        "co-founder",
+        "co_founder",
         "co",
         "founder",
         "zack",
