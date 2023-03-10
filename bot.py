@@ -316,6 +316,8 @@ async def on_message(message):
 
 class Chat(discord.ui.View):
     @discord.ui.button(label="Chat now!", style=discord.ButtonStyle.primary)
+     def __init__(self):
+        super().__init__(timeout=None)
     async def button_callback(self, button, interaction):
         user = interaction.user
         chat_id = str(uuid.uuid4())[:8]
