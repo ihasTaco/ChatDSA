@@ -315,10 +315,12 @@ async def on_message(message):
                 await message.channel.send(chunk)
 
 class Chat(discord.ui.View):
-    @discord.ui.button(label="Chat now!", style=discord.ButtonStyle.primary)
-     def __init__(self):
+    def __init__(self):
         super().__init__(timeout=None)
-    async def button_callback(self, button, interaction):
+
+    @discord.ui.button(label="Chat now!", custom_id="chat", style=discord.ButtonStyle.primary)
+    async def button_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.send_message("Button was pressed", ephemeral=True)
         user = interaction.user
         chat_id = str(uuid.uuid4())[:8]
         thread_name = f"Chat - {chat_id}"
@@ -337,7 +339,7 @@ class Chat(discord.ui.View):
 async def on_ready():
     print(f'{client.user} is ready')
     channel = await client.fetch_channel(allowed_channels) # Replace with the channel ID you want to send the message to
-    
+    client.add_view(Chat()) # Registers a View for persistent listening
     embed = Embed(
         title="Need Help? Chat with ChatDSA",
         description="By clicking the button below, you can talk to ChatDSA for help",
