@@ -41,22 +41,25 @@ allowed_channels = config['GENERAL']['help_channel']
 threads_file = 'threads.json'
 
 def generate_response(conversation_history):
-    response = openai.Completion.create(
-        model="gpt-3.5-turbo",
-        messages=conversation_history,
-        temperature=0.7,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    
-    message = response.choices[0]["message"]["content"].strip()
-
-    print(f'\nGenerated Response:\n{message}\n')
-
-    return message
+    try:
+        response = openai.Completion.create(
+            model="gpt-3.5-turbo",
+            messages=conversation_history,  # Retrieve conversation history messages
+            temperature=0.7,
+            max_tokens=1024,
+            n=1,
+            stop=None,
+            frequency_penalty=0,
+            presence_penalty=0
+        )
+        message = response.choices[0]["message"]["content"].strip()
+        print(f'\nGenerated Response:\n{message}\n')
+        return message
+    except openai.error.RateLimitError:
+        print("Rate limit reached. Deleting older messages.")
+        max_size = 50  # Adjust the max_size as needed
+        CircularBuffer.delete_oldest_messages(conversation_history, max_size)
+        return generate_response(conversation_history)
 
 def load_threads():
     if os.path.exists(threads_file):
@@ -320,11 +323,11 @@ class Chat(discord.ui.View):
 
     @discord.ui.button(label="Chat now!", custom_id="chat", style=discord.ButtonStyle.primary)
     async def button_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
-        await interaction.response.send_message("Button was pressed", ephemeral=True)
         user = interaction.user
         chat_id = str(uuid.uuid4())[:8]
         thread_name = f"Chat - {chat_id}"
         thread = await interaction.channel.create_thread(name=thread_name, auto_archive_duration=60)
+        await interaction.response.send_message(f"Created a new thread, just for you. Find it here: <#{thread.id}>", ephemeral=True)
         await thread.add_user(user)
 
         # Add the thread ID to the threads.json file
